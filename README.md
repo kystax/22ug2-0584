@@ -1,6 +1,7 @@
 Documentation (22ug2-0584)
 
 ** Deployment Requirements **
+
 Docker = Docker is a software platform that allows you to build, test, and deploy applications quickly.
 
 Docker Compose =  Docker Compose is a tool that helps you define and share multi-container applications. 
