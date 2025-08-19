@@ -16,6 +16,7 @@ Redis = Redis is an open-source, in-memory data structure store that is used as 
 --------------------------------------------------------------
 
 ** Application Description **
+
 This is a simple Flask + Redis web application.This webpage displays song lists; the user can "like" a particular song, which then gets stored in Redis.
 
 Since Redis uses a persistent volume, the liked songs stay saved even after the containers are stopped or restarted. This is really wanting to show container communication and persistent state across redeployments.
@@ -23,15 +24,18 @@ Since Redis uses a persistent volume, the liked songs stay saved even after the 
 ---------------------------------------------------------------
 
 ** Network and Volume Details **
+
 In Docker Compose, a network refers to a communication layer that allows the containers of the services defined in the docker-compose.yaml file to talk to each other.
 
 Network
+
 In Docker Compose, a network allows containers to communicate using service names instead of IP addresses.
 networks:
   app-network:
     driver: bridge
 
 Volume (redis_data)
+
 A named Docker volume used by the redis_db container to store Redis data files. This ensures the visit count is preserved across container restarts or re-deployments.
 
 volumes:
@@ -54,12 +58,14 @@ redis_db
 ---------------------------------------------------------------
 
 ** Container List **
+
 flask_app - Web server listening on port 5000
 redis_db - Key-value store with persistent volume
 
 ---------------------------------------------------------------
 
 ** Instructions **
+
 ./prepare-app.sh - Prepares the Docker network for communication.
 
 ./start-app.sh - Starts both flask_app and redis_db containers and makes the application available at http://localhost:5000
