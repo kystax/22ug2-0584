@@ -33,7 +33,6 @@ Network
 In Docker Compose, a network allows containers to communicate using service names instead of IP addresses.
 
 networks:
-
   app-network:
     driver: bridge
 
@@ -96,7 +95,9 @@ redis_db - Key-value store with persistent volume
 ** Originality and References **
 
 [1]“Volumes,” Docker Documentation, 2025. https://docs.docker.com/reference/compose-file/volumes/ (accessed Aug. 08, 2025). 
+
 [2]GeeksforGeeks, “Flask (Creating first simple application),” GeeksforGeeks, Oct. 23, 2017. https://www.geeksforgeeks.org/python/flask-creating-first-simple-application/ (accessed Aug. 08, 2025). 
+
 [3]“Networks,” Docker Documentation, 2025. https://docs.docker.com/reference/compose-file/networks/ (accessed Aug. 08, 2025). ‌‌ ‌
 
 
