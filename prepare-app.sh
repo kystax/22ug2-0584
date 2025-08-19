@@ -1,6 +1,6 @@
-#!/bin/bash
-echo "Preparing app ..."
-docker volume create redis_data
-docker network create app-network || echo "Network already exists"
-docker build -t flask_app ./app
+#!/usr/bin/env bash
+set -euo pipefail
+echo "[prepare] Creating network and volume (via compose) and building images..."
+docker compose build
+echo "[prepare] Done."
 
