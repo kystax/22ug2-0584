@@ -30,7 +30,9 @@ In Docker Compose, a network refers to a communication layer that allows the con
 Network
 
 In Docker Compose, a network allows containers to communicate using service names instead of IP addresses.
+
 networks:
+
   app-network:
     driver: bridge
 
@@ -60,6 +62,7 @@ redis_db
 ** Container List **
 
 flask_app - Web server listening on port 5000
+
 redis_db - Key-value store with persistent volume
 
 ---------------------------------------------------------------
